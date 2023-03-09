@@ -29,5 +29,6 @@ public class AppMercado {
         System.out.println("Data de vencimento: " + dataVencimento);
         System.out.println("Data da compra: " + vendas.dataAtual);
         System.out.println("Total: " + " R$ " + quant.total());
+        System.out.println();
     }
 }
