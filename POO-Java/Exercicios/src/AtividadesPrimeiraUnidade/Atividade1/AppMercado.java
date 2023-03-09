@@ -8,7 +8,6 @@ public class AppMercado {
         Mercado mercado = new Mercado();
         Mercado.Vendas vendas = new Mercado.Vendas();
         Mercado.Produto produto = new Mercado.Produto();
-;       Mercado.Item quant = new Mercado.Item(15, produto);
 
         System.out.println(" ========== Zeca Barrão =========== ");
         System.out.println(" =                                = ");
@@ -16,6 +15,10 @@ public class AppMercado {
         produto.descricao = scan.nextLine();
         System.out.println(" Digite o valor do produto: ");
         produto.preco = scan.nextDouble();
+        System.out.println("Digite a quantidade de produtos: ");
+
+        double quantidadeProdutos = scan.nextDouble();
+        Mercado.Item quant = new Mercado.Item(quantidadeProdutos, produto);
 
 
 
