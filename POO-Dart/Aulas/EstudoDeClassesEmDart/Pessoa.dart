@@ -17,9 +17,7 @@ class Pessoa{
   }
 
 }
-
 void main(){
-
 
   Pessoa pessoa = new Pessoa();  // inicializando a classe
 
@@ -28,6 +26,7 @@ void main(){
     // aqui utilizei o do while pois a validação está 100% funcional para STRING
     stdout.write("Digite o seu nome: ");
     pessoa.nome = stdin.readLineSync()!;
+    
   }while(!validaString(pessoa.nome));
 
 while (true) {
@@ -61,9 +60,6 @@ while(true){
   print("Sua idade é: ${pessoa.idade}");
   print("Seu CPF é: ${pessoa.cpf}");
   print("Sua altuera é de: ${pessoa.altura}");
-  
-
-
 }
 
 // Ao utilizar o ! após a chamada da função readLineSync(), estamos informando ao compilador que temos certeza de que o valor retornado nunca será nulo. Com isso, o valor é atribuído à variável nome sem problemas.
