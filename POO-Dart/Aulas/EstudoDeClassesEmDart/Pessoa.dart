@@ -1,5 +1,5 @@
 import 'dart:io';
-import '../../Validacoes/Validacoes.dart';
+import '../Validacoes/Validacoes.dart';
 
 
 class Pessoa{
