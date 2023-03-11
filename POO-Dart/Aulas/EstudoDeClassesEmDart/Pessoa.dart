@@ -45,8 +45,15 @@ while (true) {
   print("Entrada inválida. A idade deve ser um número inteiro.");
 }
 
+while(true){
   stdout.write("Digite o seu cpf: ");
-  pessoa.cpf = stdin.readLineSync()!;
+  var cpf = stdin.readLineSync()!;
+  if(validacpf(cpf)){
+    break;
+  }else{
+    print("CPF Invalido");
+  }
+}
   stdout.write("Digite sua altura: ");
   pessoa.altura = double.parse(stdin.readLineSync()!);
 
@@ -55,6 +62,8 @@ while (true) {
   print("Seu CPF é: ${pessoa.cpf}");
   print("Sua altuera é de: ${pessoa.altura}");
   
+
+
 }
 
 // Ao utilizar o ! após a chamada da função readLineSync(), estamos informando ao compilador que temos certeza de que o valor retornado nunca será nulo. Com isso, o valor é atribuído à variável nome sem problemas.
