@@ -1,4 +1,10 @@
 import 'dart:ffi';
+
+
+
+// Validações padrões
+
+
 bool validaString(String? string) {
   if (string == null || string.isEmpty) {
     return false;
@@ -7,6 +13,8 @@ bool validaString(String? string) {
   return regExp.hasMatch(string);
 }
 
+
+
 bool validaNumInt(int? num){
   if (num == null) {
     return false;
@@ -14,6 +22,25 @@ bool validaNumInt(int? num){
   RegExp regExp = new RegExp(r'^[0-9]+$'); 
   return regExp.hasMatch(num.toString());
 }
+
+
+bool validaNumDouble(double? num){
+  if (num == null) {
+    return false;
+  }
+  RegExp regExp = new RegExp(r'^[0-9]+$'); 
+  return regExp.hasMatch(num.toString());
+}
+
+
+bool validaNumFloat(Float? num){
+  if (num == null) {
+    return false;
+  }
+  RegExp regExp = new RegExp(r'^[0-9]+$'); 
+  return regExp.hasMatch(num.toString());
+}
+
 
 
 bool validaCPF(String cpf) {
