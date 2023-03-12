@@ -10,23 +10,26 @@ public class Caneta {
 
 
     void status(){
-        System.out.println("Uma caneta " + this.cor);
         System.out.println("Está tampada? " + this.tampado);
     }
 
 
     void rabiscar(){
-
+        if(this.tampado){
+            System.out.println("Não posso rabiscar");
+        }else{
+            System.out.println("Estou rabiscando");
+        }
     }
 
 
     void tampar(){
-
+        this.tampado = true;
     }
 
 
     void destampar(){
-
+        this.tampado = false;
     }
 
 }

@@ -9,7 +9,11 @@ public class AppCaneta {
         Caneta caneta = new Caneta();
         caneta.cor = "azul";
         caneta.ponta = 0.5;
-        caneta.tampado = false;
+        caneta.tampar();
         caneta.status();
+        caneta.rabiscar();
+        caneta.destampar();
+        caneta.status();
+        caneta.rabiscar();
     }
 }
