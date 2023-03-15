@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Disciplina-POO.iml" filepath="$PROJECT_DIR$/.idea/Disciplina-POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO-Java/Estudos/Estudos.iml" filepath="$PROJECT_DIR$/POO-Java/Estudos/Estudos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO-Java/Exercicios/Exercicios.iml" filepath="$PROJECT_DIR$/POO-Java/Exercicios/Exercicios.iml" />
+    </modules>
+  </component>
+</project>

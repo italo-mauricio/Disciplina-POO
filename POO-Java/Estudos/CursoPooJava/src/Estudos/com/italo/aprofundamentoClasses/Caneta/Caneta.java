@@ -1,4 +1,4 @@
-package Estudos.com.italo.aprofundamentoClasses;
+package Estudos.com.italo.aprofundamentoClasses.Caneta;
 
 public class Caneta {
 
