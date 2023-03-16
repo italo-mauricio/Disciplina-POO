@@ -10,6 +10,16 @@ public class Aluno {
     private int idade;
     private String periodo;
 
+    private double media;
+
+    public double getMedia() {
+        return media / 4;
+    }
+
+    public void setMedia(double media) {
+        this.media = media;
+    }
+
     public Aluno(){
         disciplina = new String[3];
         notasDisciplinas = new double[3][4];
@@ -26,8 +36,6 @@ public class Aluno {
         this.disciplina = new String[3];
         this.notasDisciplinas = new double[3][4];
     }
-
-
 
     public String getNome() {
         return nome;
@@ -101,9 +109,22 @@ public class Aluno {
             System.out.println("Notas da disciplina: " + disciplina[i]);
             for(int j = 0; j < notasDisciplinas[i].length; j++){
                 System.out.print(notasDisciplinas[i][j] + " | ");
+                calcularMedia(new double[]{notasDisciplinas[i][j]});
             }
             System.out.println();
         }
+
+
+
+
+
+    }
+    public static double calcularMedia(double[] numeros) {
+        double soma = 0.0;
+        for (double numero : numeros) {
+            soma += numero;
+        }
+        return soma / numeros.length;
     }
 
     public boolean verificarAprovado(int indice){
@@ -137,6 +158,7 @@ public class Aluno {
         }
         return false;
     }
+
 
     public void setNomeDisciplinaPos(int pos, String nomeDisciplina){
         this.disciplina[pos] = nomeDisciplina;
