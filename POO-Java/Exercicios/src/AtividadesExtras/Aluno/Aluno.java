@@ -15,8 +15,9 @@ public class Aluno {
         notasDisciplinas = new double[3][4];
     }
 
-    public Aluno(String nome, int matricula, String curso, String[] disciplina,
-                 double[][] notasDisciplinas, int idade, String periodo) {
+    public Aluno(String nome, int matricula, String curso
+                 ,int idade, String periodo) {
+
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
@@ -86,6 +87,7 @@ public class Aluno {
 
     public void mostrarInfo(){
 
+        Aluno aluno = new Aluno();
         System.out.println("Universidade Federal do Rio Grande do Norte");
         System.out.println();
         System.out.println("================ Boletim UFRN ================");
@@ -134,5 +136,13 @@ public class Aluno {
             return true;
         }
         return false;
+    }
+
+    public void setNomeDisciplinaPos(int pos, String nomeDisciplina){
+        this.disciplina[pos] = nomeDisciplina;
+    }
+
+    public void setNotaPosIJ(int posI, int posJ, double nota){
+        this.notasDisciplinas[posI][posJ] = nota;
     }
 }
