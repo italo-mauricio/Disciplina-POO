@@ -10,7 +10,7 @@ public class AppAluno {
         Scanner scan = new Scanner(System.in);
 
 
-        int x = 0;
+        int x = 0;   // apenas variáveis de controle para o for
         int y = 0;
         Aluno aluno = new Aluno();
         System.out.print("Digite o nome do aluno: ");

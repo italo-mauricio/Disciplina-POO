@@ -115,9 +115,6 @@ public class Aluno {
         }
 
 
-
-
-
     }
     public static double calcularMedia(double[] numeros) {
         double soma = 0.0;
