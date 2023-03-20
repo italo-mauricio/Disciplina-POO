@@ -32,4 +32,13 @@ class Calculadora{
         }
         return resultado;
     }
+
+    public static double potencia(double[] numeros){
+        double resultado = numeros[0];
+        for(int i = 1; i < numeros.length; i++){
+            resultado = Math.pow(numeros[0], numeros[i]);
+
+        }
+        return resultado;
+    }
 }

@@ -9,6 +9,7 @@ public class Screen {
         System.out.println(" =                2 - Subtrair               = ");
         System.out.println(" =                3 - Dividir                = ");
         System.out.println(" =                4 - Multiplicar            = ");
+        System.out.println(" =                5 - Potência               = ");
         System.out.println(" =                0 - Sair                   = ");
         System.out.println(" =                                           = ");
         System.out.println(" =              By: Italo-Mauricio           = ");

@@ -8,9 +8,7 @@ import java.util.Scanner;
 public class AppCalculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         int opcao = 0;
-
 
         do {
 
@@ -29,7 +27,7 @@ public class AppCalculadora {
                 }
             } while (tentarNovamente);
 
-            if (opcao >= 1 && opcao <= 4) {
+            if (opcao >= 1 && opcao <= 5) {
                 System.out.print("Digite a quantidade de números que deseja calcular: ");
                 int qtdNumeros = scan.nextInt();
                 double[] numeros = new double[qtdNumeros];
@@ -45,6 +43,7 @@ public class AppCalculadora {
                     case 2 -> resultado = Calculadora.subtracao(numeros);
                     case 3 -> resultado = Calculadora.divisao(numeros);
                     case 4 -> resultado = Calculadora.multiplicacao(numeros);
+                    case 5 -> resultado = Calculadora.potencia(numeros);
                 }
 
                 System.out.printf("Resultado: %.2f\n", resultado);
