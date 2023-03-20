@@ -6,19 +6,17 @@ import java.util.Scanner;
 
 public class AppCalculadora {
     public static void main(String[] args) {
-        Screen tela = new Screen();
-
         Scanner scan = new Scanner(System.in);
 
         int opcao = 0;
 
         do {
             tela();
-            System.out.println("Escolha uma opção: ");
+            System.out.print("Escolha uma opção: ");
             opcao = scan.nextInt();
 
             if (opcao >= 1 && opcao <= 4) {
-                System.out.println("Digite a quantidade de números que deseja calcular:");
+                System.out.print("Digite a quantidade de números que deseja calcular: ");
                 int qtdNumeros = scan.nextInt();
 
                 double[] numeros = new double[qtdNumeros];
@@ -42,13 +40,13 @@ public class AppCalculadora {
             } else if (opcao != 0) {
                 System.out.println("Opção inválida!");
             }
-
         } while (opcao != 0);
-
         scan.close();
     }
 
     private static void tela() {
+        Screen tela = new Screen();
+
     }
 }
 
