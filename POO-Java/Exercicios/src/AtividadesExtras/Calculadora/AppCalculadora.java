@@ -3,15 +3,17 @@ package AtividadesExtras.Calculadora;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
-
+/***
+ * @author italo-mauricio
+ *
+ * Calculadora simples para o treino de java com operações básicas usando OOP.
+ */
 public class AppCalculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int opcao = 0;
 
         do {
-
             // utilizei o try catch para evitar que o programa exploda quando o usuario digitar uma letra
             tela();
             boolean tentarNovamente;
