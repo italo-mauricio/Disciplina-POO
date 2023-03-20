@@ -40,7 +40,7 @@ public class AppCalculadora {
                 }
 
                 double resultado = 0.0;
-                switch (opcao) {
+                switch (opcao) { // optei por utilizar o método de arrow function para facilitar
                     case 1 -> resultado = Calculadora.soma(numeros);
                     case 2 -> resultado = Calculadora.subtracao(numeros);
                     case 3 -> resultado = Calculadora.divisao(numeros);
