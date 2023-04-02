@@ -4,6 +4,7 @@ void main() {
 
   gato.comer();
   cachorro.fazerSom();
+  print(cachorro);
 }
 
 class Animal {
@@ -29,6 +30,16 @@ class Cachorro extends Animal {
     fofura += 10;
     print("A fofura do $nome aumentou para $fofura");
   }
+
+  @override
+  void fazerSom() {
+    print("$nome fez auau!");
+  }
+
+  @override
+  String toString() {
+    return "Cachorro || Nome: $nome, Peso: $peso, Fofura: $fofura";
+  }
 }
 
 class Gato extends Animal {
@@ -36,5 +47,10 @@ class Gato extends Animal {
 
   bool estarAmigavel() {
     return true;
+  }
+
+  @override
+  void fazerSom() {
+    print("$nome fez miau!");
   }
 }
