@@ -1,6 +1,16 @@
+void main() {
+  Cachorro cachorro = new Cachorro("Billy", 10, 100);
+  Gato gato = new Gato("xaninho", 5);
+
+  gato.comer();
+  cachorro.fazerSom();
+}
+
 class Animal {
   String nome = "";
   double peso = 0;
+
+  Animal(this.nome, this.peso);
 
   void comer() {
     print("$nome comeu!");
@@ -14,6 +24,7 @@ class Animal {
 class Cachorro extends Animal {
   int fofura = 0;
 
+  Cachorro(String nome, double peso, this.fofura) : super(nome, peso);
   void brincar() {
     fofura += 10;
     print("A fofura do $nome aumentou para $fofura");
@@ -21,6 +32,8 @@ class Cachorro extends Animal {
 }
 
 class Gato extends Animal {
+  Gato(String nome, double peso) : super(nome, peso);
+
   bool estarAmigavel() {
     return true;
   }
